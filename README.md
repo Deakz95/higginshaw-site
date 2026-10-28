@@ -37,9 +37,17 @@ The old blog URLs were leftover Wix template names, so they've been given proper
   Volunteers page is worth writing.
 - `/members` — Wix members-area login, which doesn't exist outside Wix.
 
+## Videos
+The two videos from Wix are in `videos/` (720p, about 7 MB each), with a cover picture for each
+that shows before someone presses play:
+- `community-hub-video.mp4` — home page
+- `rugby-club-video.mp4` — rugby page
+
+To swap one, replace the `.mp4` (and its `-poster.jpg`) with a new file of the same name.
+Keep videos under about 50 MB; GitHub won't accept single files over 100 MB.
+
 ## Still to do before going live
-1. **Videos** — the home and rugby pages each had an embedded video that the scrape
-   couldn't capture. Search for `TODO: paste the YouTube embed` and drop in the embed code.
+1. ~~**Videos**~~ — done, see above.
 2. **Forms** — the contact and newsletter forms were Wix-powered. They're marked up ready
    for Netlify Forms (`data-netlify="true"`); on other hosts point them at Formspree or
    similar. Search for `TODO`.

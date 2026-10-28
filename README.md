@@ -49,6 +49,17 @@ The old blog URLs were leftover Wix template names, so they've been given proper
 4. **Colours** — top of `css/style.css`; swap `--brand` / `--accent` for the club colours.
 5. Zumba times still say "(Post to be updated for timings)" — that's from the original.
 
-## Deploying
+## Preview link (GitHub Pages)
+Live preview: https://deakz95.github.io/higginshaw-site/
+Files: https://github.com/Deakz95/higginshaw-site (public)
+
+After editing anything, upload the changes and the preview updates within a minute or two:
+
+    git add -A
+    git commit -m "Describe what you changed"
+    git push
+
+## Deploying to your own domain
 Upload the whole folder to any static host (Netlify, Cloudflare Pages, GitHub Pages, or
 your web host's `public_html`). On Netlify/Cloudflare you can just drag the folder in.
+GitHub Pages can also use your own domain: repo Settings > Pages > Custom domain.

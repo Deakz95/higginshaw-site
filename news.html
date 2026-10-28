@@ -108,8 +108,13 @@
             <li><a href="https://www.youtube.com/@higginshawarlfc8324" aria-label="YouTube" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15.1V8.9L15.5 12l-5.8 3.1z"/></svg></a></li>
           </ul>
           <h2 style="margin-top:32px">Sign Up for Community News</h2>
-          <!-- TODO: connect to a mailing list (e.g. Mailchimp / Brevo) or a form service -->
-          <form class="newsletter" name="newsletter" method="POST" data-netlify="true">
+          <form class="newsletter site-form" name="newsletter" action="https://api.web3forms.com/submit" method="POST"
+                data-subject-field="email" data-subject-prefix="New newsletter signup: "
+                data-success="Thanks for signing up! You&rsquo;re on the list for community news.">
+            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+            <input type="hidden" name="subject" value="New newsletter signup">
+            <input type="hidden" name="from_name" value="Higginshaw website">
+            <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
             <label class="sr-only" for="nl-email">Email</label>
             <input id="nl-email" type="email" name="email" placeholder="Your email" required>
             <button class="btn" type="submit">Join</button>
@@ -117,14 +122,19 @@
         </div>
         <div>
           <h2>Get in Touch</h2>
-          <!-- TODO: Wix forms don't come across. Hook this up to Formspree / Netlify Forms / your host's form handler -->
-          <form name="contact" method="POST" data-netlify="true">
+          <form class="site-form" name="contact" action="https://api.web3forms.com/submit" method="POST"
+                data-subject-field="topic" data-subject-prefix="Website message: "
+                data-success="Thanks for your message! We&rsquo;ll get back to you as soon as we can.">
+            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+            <input type="hidden" name="subject" value="New message from the Higginshaw website">
+            <input type="hidden" name="from_name" value="Higginshaw website">
+            <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
             <div class="row">
               <input type="text" name="first_name" placeholder="First Name" aria-label="First Name" required>
               <input type="text" name="last_name" placeholder="Last Name" aria-label="Last Name">
             </div>
             <input type="email" name="email" placeholder="Email" aria-label="Email" required>
-            <input type="text" name="subject" placeholder="Subject" aria-label="Subject">
+            <input type="text" name="topic" placeholder="Subject" aria-label="Subject">
             <textarea name="message" placeholder="Leave us a message..." aria-label="Message" required></textarea>
             <button class="btn" type="submit">Submit</button>
           </form>

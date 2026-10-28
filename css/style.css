@@ -166,3 +166,9 @@ textarea { min-height: 120px; resize: vertical; }
 .newsletter { display: flex; gap: 8px; }
 .newsletter input { margin: 0; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+button:disabled { opacity: .6; cursor: wait; }
+.form-status { margin: 12px 0 0; padding: 12px 14px; border-radius: 6px; font-weight: 600; color: #fff; }
+.form-status:empty { display: none; }
+.form-status.success { background: rgba(242,169,0,.15); border: 1px solid var(--accent); }
+.form-status.error { background: rgba(255,110,110,.15); border: 1px solid #ff8a8a; }
+.form-status a { color: var(--accent); }

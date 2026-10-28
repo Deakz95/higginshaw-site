@@ -48,12 +48,12 @@ Keep videos under about 50 MB; GitHub won't accept single files over 100 MB.
 
 ## Still to do before going live
 1. ~~**Videos**~~ — done, see above.
-2. **Forms** — connected to Web3Forms (free, 250 messages/month), which emails
+2. ~~**Forms**~~ — done. Connected to Web3Forms (free, 250 messages/month), which emails
    higginshawcp@outlook.com. Contact messages arrive as "Website message: <their subject>";
    newsletter signups as "New newsletter signup: <their email>" (hit Reply to answer them).
-   The access key is in each page's footer forms (`name="access_key"`). Until it's set, the
-   forms show "not connected yet" with the club email. To change it, find-and-replace the
-   old key across all `.html` files. The sending code is in `js/main.js`. Works on any host.
+   The access key (set 28 Oct 2026) is in each page's footer forms (`name="access_key"`).
+   To change it, find-and-replace the old key across all `.html` files. The sending code
+   is in `js/main.js`. Works on any host, including your own domain later.
 3. **Domain** — replace `https://www.example.com/` in the canonical tags with your domain.
    Also make the `og:image` tags full addresses (e.g. `https://yourdomain/images/...`);
    Facebook and WhatsApp link previews ignore relative paths like `images/...`.

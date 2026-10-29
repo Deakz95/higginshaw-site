@@ -54,23 +54,25 @@ Keep videos under about 50 MB; GitHub won't accept single files over 100 MB.
    The access key (set 28 Oct 2026) is in each page's footer forms (`name="access_key"`).
    To change it, find-and-replace the old key across all `.html` files. The sending code
    is in `js/main.js`. Works on any host, including your own domain later.
-3. **Domain** — replace `https://www.example.com/` in the canonical tags with your domain.
-   Also make the `og:image` tags full addresses (e.g. `https://yourdomain/images/...`);
-   Facebook and WhatsApp link previews ignore relative paths like `images/...`.
+3. ~~**Domain**~~ — done: www.higginshawcommunityproject.uk (canonical and share-image tags
+   on every page use it).
 4. **Colours** — top of `css/style.css`; swap `--brand` / `--accent` for the club colours.
 5. Zumba times still say "(Post to be updated for timings)" — that's from the original.
 
-## Preview link (GitHub Pages)
-Live preview: https://deakz95.github.io/higginshaw-site/
+## Live site
+Address: https://www.higginshawcommunityproject.uk/
+(the old https://deakz95.github.io/higginshaw-site/ link now forwards there)
 Files: https://github.com/Deakz95/higginshaw-site (public)
 
-After editing anything, upload the changes and the preview updates within a minute or two:
+How it's wired:
+- **Hosting:** GitHub Pages serves the files in this folder. The `CNAME` file tells it
+  the address is www.higginshawcommunityproject.uk; don't delete it.
+- **Domain:** registered at Cloudflare (renews Oct 2031). In Cloudflare DNS, `www` and the
+  bare domain (`@`) are CNAME records pointing to `deakz95.github.io`, set to **DNS only**
+  (grey cloud). Leave them grey: GitHub provides the https certificate.
+
+After editing anything, upload the changes and the live site updates within a minute or two:
 
     git add -A
     git commit -m "Describe what you changed"
     git push
-
-## Deploying to your own domain
-Upload the whole folder to any static host (Netlify, Cloudflare Pages, GitHub Pages, or
-your web host's `public_html`). On Netlify/Cloudflare you can just drag the folder in.
-GitHub Pages can also use your own domain: repo Settings > Pages > Custom domain.

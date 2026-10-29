@@ -76,3 +76,20 @@ After editing anything, upload the changes and the live site updates within a mi
     git add -A
     git commit -m "Describe what you changed"
     git push
+
+## Other site files
+- `404.html` — the "page not found" page (logo in the middle, club colours). GitHub shows it
+  for any address that doesn't exist. Its links start with `/` on purpose.
+- `sitemap.xml` + `robots.txt` — tell Google which pages exist. **When you add a page or news
+  post, add a line for it to `sitemap.xml`.**
+- `fonts/` — the Inter and Oswald fonts, stored with the site so nothing loads from Google.
+- `apple-touch-icon.png`, `images/favicon-32.png` — phone home-screen icon and browser-tab icon.
+- Photo sizes: big photos have a smaller copy (`-800.jpg` etc.) and the pages' `srcset` lets
+  phones pick the small one. If you replace a photo, replace its smaller copy too.
+- Google: the home page has a hidden block (`application/ld+json`) with the club's name,
+  address, phone, map location and social links, used in Google search results.
+
+## Adding a news post
+Copy `news/our-new-website.html`, change the title, description, date and text, then add a
+card for it at the top of `news.html` (and swap it into the home page's Latest News), and
+add it to `sitemap.xml`.

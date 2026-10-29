@@ -11,10 +11,10 @@
   <meta property="og:image" content="https://www.higginshawcommunityproject.uk/images/logo.png">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="images/logo.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preload" href="fonts/oswald-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -28,7 +28,7 @@
   <header class="site-header">
     <div class="container">
       <a class="brand" href="index.html">
-        <img src="images/logo.png" alt="Higginshaw Community Project logo">
+        <img width="168" height="169" src="images/logo-168.png" alt="Higginshaw Community Project logo">
         <span>Higginshaw<br>Community Project</span>
       </a>
       <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
@@ -55,7 +55,7 @@
     <section class="section">
       <div class="container">
         <div class="activity">
-          <img src="images/rugby-cup-final-2022-900.jpg" alt="Higginshaw ARLFC cup final 2022" loading="lazy">
+          <img fetchpriority="high" width="900" height="482" src="images/rugby-cup-final-2022-900.jpg" alt="Higginshaw ARLFC cup final 2022">
           <div>
             <h2>Rugby League</h2>
             <p>Interested in being part of our successful Rugby League Team Higginshaw ARLFC? We have both Youth and Open Age teams, so get involved!</p>
@@ -64,7 +64,7 @@
           </div>
         </div>
         <div class="activity">
-          <img src="images/activities-adult-dancers.jpg" alt="Adult dancers, March 2022" loading="lazy">
+          <img width="900" height="675" src="images/activities-adult-dancers.jpg" alt="Adult dancers, March 2022" loading="lazy">
           <div>
             <h2>Premier Diamonds Dance Troupe</h2>
             <p>Love to dance or feel like there is an inner dancer within you? Come along and check out Premier Diamonds Dance Troupe.</p>
@@ -72,7 +72,7 @@
           </div>
         </div>
         <div class="activity">
-          <img src="images/activities-zumba.jpg" alt="Zumba class" loading="lazy">
+          <img width="723" height="900" src="images/activities-zumba.jpg" alt="Zumba class" loading="lazy">
           <div>
             <h2>Zumba</h2>
             <p>Want to get fit through dance &amp; aerobic movement whilst enjoying the beat of salsa &amp; latino music? Come along and try out one of our Zumba classes.</p>
@@ -81,7 +81,7 @@
           </div>
         </div>
         <div class="activity">
-          <img src="images/activities-darts.jpg" alt="Darts board" loading="lazy">
+          <img width="900" height="600" src="images/activities-darts.jpg" alt="Darts board" loading="lazy">
           <div>
             <h2>Darts, Dominoes &amp; Crib Club</h2>
             <p>Fancy yourself at a game of darts, dominoes or crib and a new social scene to go with it?</p>
@@ -91,7 +91,7 @@
           </div>
         </div>
         <div class="activity">
-          <img src="images/activities-pool-table.jpg" alt="Pool table" loading="lazy">
+          <img width="900" height="600" src="images/activities-pool-table.jpg" alt="Pool table" loading="lazy">
           <div>
             <h2>Pool</h2>
             <p>Got an eye for the ball? Get in touch to find out more about playing Pool in your local Community Centre.</p>
@@ -111,7 +111,7 @@
           <p>Get in touch to find out more by calling John Mellor on <a href="tel:07970100606">07970 100606</a>.</p>
           <a class="btn" href="tel:07970100606">Call John</a>
         </div>
-        <img class="rounded" src="images/function-room.jpg" alt="Inside Higginshaw Community Project" loading="lazy">
+        <img width="1600" height="1200" srcset="images/function-room-800.jpg 800w, images/function-room.jpg 1600w" sizes="(max-width: 800px) 100vw, 760px" class="rounded" src="images/function-room.jpg" alt="Inside Higginshaw Community Project" loading="lazy">
       </div>
     </section>
   </main>
@@ -122,8 +122,9 @@
         <div>
           <h2>Higginshaw Community Project</h2>
           <address style="font-style:normal">
-            Thames Street<br>Higginshaw<br>Oldham<br>OL1 3QU
+            <a href="https://maps.app.goo.gl/gQZjQvZCSkHr1gMu5" target="_blank" rel="noopener" class="map-link">Thames Street<br>Higginshaw<br>Oldham<br>OL1 3QU</a>
           </address>
+          <p style="margin:.5em 0 0"><a href="https://maps.app.goo.gl/gQZjQvZCSkHr1gMu5" target="_blank" rel="noopener">&#128205; Open in Google Maps</a></p>
           <p style="margin-top:1em">
             E: <a href="mailto:higginshawcp@outlook.com">higginshawcp@outlook.com</a><br>
             T: <a href="tel:07970100606">07970 100606</a>
@@ -147,6 +148,7 @@
             <input id="nl-email" type="email" name="email" placeholder="Your email" required>
             <button class="btn" type="submit">Join</button>
           </form>
+          <p class="form-note">We&rsquo;ll only use your email to send you community news. To stop, just email us and we&rsquo;ll remove you.</p>
         </div>
         <div>
           <h2>Get in Touch</h2>
@@ -166,6 +168,7 @@
             <textarea name="message" placeholder="Leave us a message..." aria-label="Message" required></textarea>
             <button class="btn" type="submit">Submit</button>
           </form>
+          <p class="form-note">We&rsquo;ll only use your details to reply to your message.</p>
         </div>
       </div>
       <div class="footer-bottom">

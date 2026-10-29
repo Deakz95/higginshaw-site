@@ -11,11 +11,44 @@
   <meta property="og:image" content="https://www.higginshawcommunityproject.uk/images/logo.png">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="images/logo.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preload" href="fonts/oswald-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Higginshaw Community Project",
+    "url": "https://www.higginshawcommunityproject.uk/",
+    "logo": "https://www.higginshawcommunityproject.uk/images/logo.png",
+    "email": "higginshawcp@outlook.com",
+    "telephone": "+44 7970 100606",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Thames Street",
+      "addressLocality": "Oldham",
+      "addressRegion": "Greater Manchester",
+      "postalCode": "OL1 3QU",
+      "addressCountry": "GB"
+    },
+    "location": {
+      "@type": "Place",
+      "name": "Higginshaw Community Project",
+      "hasMap": "https://maps.app.goo.gl/gQZjQvZCSkHr1gMu5",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 53.5479101,
+        "longitude": -2.104992
+      }
+    },
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=100088274062033",
+      "https://www.youtube.com/@higginshawarlfc8324"
+    ]
+  }
+  </script>
 </head>
 <body>
   <div class="topbar">
@@ -28,7 +61,7 @@
   <header class="site-header">
     <div class="container">
       <a class="brand" href="index.html">
-        <img src="images/logo.png" alt="Higginshaw Community Project logo">
+        <img width="168" height="169" src="images/logo-168.png" alt="Higginshaw Community Project logo">
         <span>Higginshaw<br>Community Project</span>
       </a>
       <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
@@ -52,7 +85,7 @@
 
   <main>
     <section class="hero">
-      <img class="hero-bg" src="images/rugby-cup-final-2022-2000.jpg" alt="">
+      <img fetchpriority="high" width="1792" height="960" srcset="images/rugby-cup-final-2022-900.jpg 900w, images/rugby-cup-final-2022-1200.jpg 1200w, images/rugby-cup-final-2022-2000.jpg 1792w" sizes="100vw" class="hero-bg" src="images/rugby-cup-final-2022-2000.jpg" alt="">
       <div class="container">
         <h1>Stronger Together</h1>
         <p><strong>Welcome to the Higginshaw Community Project Website</strong></p>
@@ -84,7 +117,7 @@
           <p>Get in touch to find out more by calling John Mellor on <a href="tel:07970100606">07970 100606</a>.</p>
           <a class="btn" href="tel:07970100606">Call John</a>
         </div>
-        <img class="rounded" src="images/function-room.jpg" alt="Inside Higginshaw Community Project" loading="lazy">
+        <img width="1600" height="1200" srcset="images/function-room-800.jpg 800w, images/function-room.jpg 1600w" sizes="(max-width: 800px) 100vw, 760px" class="rounded" src="images/function-room.jpg" alt="Inside Higginshaw Community Project" loading="lazy">
       </div>
     </section>
 
@@ -93,16 +126,16 @@
         <h2>Latest News</h2>
         <div class="grid cols-3">
           <article class="card">
-            <a href="news/welcome.html"><img src="images/building-and-garden-900.jpg" alt="Welcome to Higginshaw Community Project" loading="lazy"></a>
+            <a href="news/our-new-website.html"><img width="900" height="482" src="images/rugby-cup-final-2022-900.jpg" alt="Our New Website Is Live!" loading="lazy"></a>
             <div class="card-body">
-              <div class="meta">15 November 2022 &middot; 1 min read</div>
-              <h3><a href="news/welcome.html">Welcome to Higginshaw Community Project</a></h3>
-              <p>We are delighted to have finally launched our very own website promoting all of the various activities we have going on within Higginshaw Community Project...</p>
-              <a class="more" href="news/welcome.html">Read more &rarr;</a>
+              <div class="meta">29 October 2026 &middot; 2 min read</div>
+              <h3><a href="news/our-new-website.html">Our New Website Is Live!</a></h3>
+              <p>We&rsquo;ve got a brand new home online at higginshawcommunityproject.uk, with news, activities, rugby fixtures, the kit shop and venue hire, all in one place...</p>
+              <a class="more" href="news/our-new-website.html">Read more &rarr;</a>
             </div>
           </article>
           <article class="card">
-            <a href="news/history-of-higginshaw-arlfc.html"><img src="images/history-standard-cup-winners-1948-900.jpg" alt="The History of Higginshaw ARLFC" loading="lazy"></a>
+            <a href="news/history-of-higginshaw-arlfc.html"><img width="900" height="675" src="images/history-standard-cup-winners-1948-900.jpg" alt="The History of Higginshaw ARLFC" loading="lazy"></a>
             <div class="card-body">
               <div class="meta">15 November 2022 &middot; 1 min read</div>
               <h3><a href="news/history-of-higginshaw-arlfc.html">The History of Higginshaw ARLFC</a></h3>
@@ -111,11 +144,11 @@
             </div>
           </article>
           <article class="card">
-            <a href="news/in-the-press.html"><img src="images/press-youth-rugby-academy-900.jpg" alt="In The Press..." loading="lazy"></a>
+            <a href="news/in-the-press.html"><img width="506" height="900" src="images/press-youth-rugby-academy-900.jpg" alt="In The Press..." loading="lazy"></a>
             <div class="card-body">
               <div class="meta">15 November 2022 &middot; 1 min read</div>
               <h3><a href="news/in-the-press.html">In The Press...</a></h3>
-              <p>Check out our various snippings where Higginshaw Community Project has featured in the local press... I don't know about you, but we're pretty proud.</p>
+              <p>Check out our various snippets where Higginshaw Community Project has featured in the local press... I don't know about you, but we're pretty proud.</p>
               <a class="more" href="news/in-the-press.html">Read more &rarr;</a>
             </div>
           </article>
@@ -131,8 +164,9 @@
         <div>
           <h2>Higginshaw Community Project</h2>
           <address style="font-style:normal">
-            Thames Street<br>Higginshaw<br>Oldham<br>OL1 3QU
+            <a href="https://maps.app.goo.gl/gQZjQvZCSkHr1gMu5" target="_blank" rel="noopener" class="map-link">Thames Street<br>Higginshaw<br>Oldham<br>OL1 3QU</a>
           </address>
+          <p style="margin:.5em 0 0"><a href="https://maps.app.goo.gl/gQZjQvZCSkHr1gMu5" target="_blank" rel="noopener">&#128205; Open in Google Maps</a></p>
           <p style="margin-top:1em">
             E: <a href="mailto:higginshawcp@outlook.com">higginshawcp@outlook.com</a><br>
             T: <a href="tel:07970100606">07970 100606</a>
@@ -156,6 +190,7 @@
             <input id="nl-email" type="email" name="email" placeholder="Your email" required>
             <button class="btn" type="submit">Join</button>
           </form>
+          <p class="form-note">We&rsquo;ll only use your email to send you community news. To stop, just email us and we&rsquo;ll remove you.</p>
         </div>
         <div>
           <h2>Get in Touch</h2>
@@ -175,6 +210,7 @@
             <textarea name="message" placeholder="Leave us a message..." aria-label="Message" required></textarea>
             <button class="btn" type="submit">Submit</button>
           </form>
+          <p class="form-note">We&rsquo;ll only use your details to reply to your message.</p>
         </div>
       </div>
       <div class="footer-bottom">

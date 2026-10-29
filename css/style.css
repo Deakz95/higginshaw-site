@@ -29,6 +29,10 @@ body {
   background: var(--bg);
 }
 img { max-width: 100%; height: auto; display: block; }
+/* Let long web addresses and emails wrap on small phones instead of pushing the page sideways */
+p, li, a { overflow-wrap: anywhere; }
+/* Grid columns may shrink below their longest word (stops sideways scrolling on phones) */
+.split > *, .activity > *, .footer-grid > * { min-width: 0; }
 a { color: var(--brand-2); }
 a:hover { color: var(--accent); }
 h1, h2, h3 {
@@ -134,7 +138,7 @@ p { margin: 0 0 1em; }
 .article .meta { color: var(--muted); font-size: .9rem; margin-bottom: 24px; }
 .article img { border-radius: var(--radius); margin: 24px 0; }
 .article h2 { font-size: 1.5rem; margin-top: 1.4em; }
-.press img { max-width: 520px; margin-left: auto; margin-right: auto; }
+.press img { max-width: min(520px, 100%); margin-left: auto; margin-right: auto; }
 
 /* ---------- Video slot ---------- */
 .video { aspect-ratio: 16/9; background: #000; border-radius: var(--radius); overflow: hidden; display: grid; place-items: center; color: #fff; text-align: center; }
